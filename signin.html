@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      .container {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main {
+        min-height: 60vh;
+        min-width: 23vw;
+        border: 3px solid white;
+        border-radius: 20px;
+        color: white;
+        font-family: sans-serif;
+        box-shadow: 2px 2px 50px aquamarine;
+        padding-bottom: 3rem;
+      }
+
+      .main h1 {
+        margin: 3rem 0 1.5rem 0;
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      input {
+        background-color: black;
+        border: none;
+        border-bottom: 2px solid white;
+        width: 80%;
+        margin: 1.1rem auto;
+        color: white;
+        padding-bottom: 7px;
+        outline: none;
+      }
+
+      .inline-block-box {
+        display: inline-block;
+        width: fit-content;
+        margin: 0;
+      }
+
+      ::placeholder {
+        color: white;
+      }
+
+      .checkbox {
+        text-align: left;
+        margin-top: 0.3rem;
+        padding-left: 2.1rem;
+      }
+
+      label {
+        font-size: 0.8rem;
+      }
+
+      .submit-btn {
+        border: 2px solid rgb(106, 172, 223);
+        border-radius: 1000px;
+        background-color: aquamarine;
+        color: black;
+        padding: 5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 0.7rem;
+      }
+
+      h2 span {
+        color: aquamarine;
+        font-weight: bolder;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1>Sign In</h1>
+        <form action="SigninServlet" method="post">
+            <input type="text" name="userid" placeholder="User Id" />
+          <input type="text" name="username" placeholder="Username" />
+          <input type="password" name="password" placeholder="Password" />
+          <input
+            type="submit"
+            value="Register"
+            class="submit-btn"
+            name="register"
+            id="login"
+          />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
